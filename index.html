@@ -13,7 +13,7 @@
     <section id="banner">
         <img src="images/logo.png" alt="logo" class="logo">
         <div class="banner-text">
-            <h1>Hair Studio</h1>
+            <h1>Barber Shop</h1>
             <p>Style your hair, Style your Life</p>
             <div class="banner-btn">
                 <a href="#"><span></span>Find Out</a>
@@ -21,6 +21,44 @@
             </div>
         </div>
     </section>
+<!-- SIDE NAV -->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+<!-- MENU -->
+<div id="menuBtn">
+    <img src="images/menu.png" alt="menu" id="menu">
+</div>
     
+<!-- Javascript -->
+
+<script>
+
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function() {
+    if(sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+    }else{
+        sideNav.style.right = "-250px";
+        menu.src = "images/menu.png";
+    }
+}
+
+</script>
+
 </body>
 </html>
