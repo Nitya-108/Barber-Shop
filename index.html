@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Barber Shop</title>
 </head>
@@ -25,11 +26,11 @@
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#">MEET US</a></li>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#testimonial">TESTIMONIALS</a></li>
+                <li><a href="#footer">MEET US</a></li>
             </ul>
         </nav>
     </div>
@@ -179,6 +180,7 @@
 <!-- --------Footer--------- -->
 
 <section id="footer">
+    <img src="images/footer-img.png" class="footer-img" alt="footer-image">
     <div class="title-text">
         <p>CONTACT</p>
         <H1>Vist Our Shop</H1>
@@ -193,8 +195,16 @@
             <h1>Get In Touch</h1>
             <p>#30 abc Colony, xyz City UK<i class="fa fa-map-marker"></i></p>
             <p>example@website.com<i class="fa fa-paper-plane"></i></p>
-            <p>+0 0123456789<i class="fa fa-phone"></i></p>
+            <p>+01 0123456789<i class="fa fa-phone"></i></p>
         </div>
+    </div>
+    
+    <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube-play"></i>
+        <p>Copyright ©  Ñítÿä Corperation</p>
     </div>
 </section>
 
@@ -217,6 +227,11 @@ menuBtn.onclick = function() {
         menu.src = "images/menu.png";
     }
 }
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
 
 </script>
 
